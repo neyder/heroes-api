@@ -1,5 +1,5 @@
 ARG JAVA_VERSION=1.11
-ARG GRADLE_VERSION=jdk11
+ARG GRADLE_VERSION=6-jdk11
 
 FROM gradle:$GRADLE_VERSION as builder
 COPY --chown=gradle:gradle . /home/gradle/src
